@@ -58,6 +58,11 @@ else if (operacion.equals("Division")){
         input.close();
 }
 
+else {
+    System.out.print("No existe la operacion");
+    
+}
+
 }
 }
 
