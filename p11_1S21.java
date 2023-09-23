@@ -4,7 +4,7 @@ public class p11_1S21{
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("Que tipo de operacion desea realizar");
-		System.out.println("Suma,Resta,Multiplicacion,Division,Raiz,potencia");
+		System.out.println("Suma,Resta,Multiplicacion,Division,Raiz,Potencia");
 	    String operacion;
 	    operacion=teclado.nextLine();
 	    switch(operacion){
@@ -57,14 +57,22 @@ public class p11_1S21{
 	    	case "Potencia":
 	    		System.out.println("Haremos una potencia");
 	    		Scanner po = new Scanner(System.in);
-	    		float po1,po2,po3;
-	    		System.out.println("Ingresa dos valores");
-	    		po1 = po.nextFloat();
-	    		po2 = po.nextFloat();
-	    		po3 = Math.pow(po1,po2);
-	    		System.out.println("La Potencia de los 2 numeros es: " +po3);
+	    		float base,potencia;
+	    		System.out.println("Dime la base");
+	    		base = po.nextFloat();
+	    		System.out.println("Dime la potencia");
+	    		potencia = po.nextFloat();
+	    		System.out.println("La Potencia de los 2 numeros es: " +Math.pow(base,potencia));
 	    		break;
 
+	    	case "Raiz":
+	    		System.out.println("Haremos una raiz");
+	    		Scanner rz = new Scanner(System.in);
+	    		float numero, raiz;
+	    		System.out.println("Dime el numero al que deseas obetenerle raiz");
+	    	    numero = rz.nextFloat();
+	    	    System.out.println("La raiz cuadrada de es " + Math.sqrt(numero));
+	    	    break;
 
 
 
